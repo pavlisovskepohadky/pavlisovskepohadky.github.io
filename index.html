@@ -456,7 +456,74 @@ h1, h2 {
   margin: 4px auto 14px;
   box-shadow: 0 5px 14px rgba(105, 72, 53, 0.15);
 }
-} </style>
+} 
+
+(bez předmětu)
+Od:
+Mia Jirásková
+mia.jiraskova@email.cz
+Komu:
+mia.jiraskova@email.cz
+Doručené
+Dnes 23:43
+
+Shrnout e‑mail
+/* Finální doladění velikostí a spodní části */
+
+h1 {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.nakup {
+  max-width: 720px;
+  padding: 22px 28px;
+  background: #fff1e2;
+}
+
+.nakup h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.nakup p {
+  margin: 7px auto;
+}
+
+.nakup > a.tlacitko {
+  display: inline-block;
+  margin: 14px 5px 4px;
+}
+
+.nakup > details {
+  display: inline-block;
+  margin: 14px 5px 4px;
+  vertical-align: top;
+}
+
+.nakup > details[open] {
+  display: block;
+  margin: 14px auto 0;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  .nakup {
+    padding: 20px 18px;
+  }
+
+  .nakup > a.tlacitko,
+  .nakup > details {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+  }
+}  
+  </style>
 </head>
 
 <body>
