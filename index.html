@@ -522,7 +522,56 @@ h1 {
     width: fit-content;
     margin: 10px auto;
   }
-}  
+} 
+    /* Poslední zkompaktnění */
+
+.text p {
+  text-align: left;
+  hyphens: none;
+  line-height: 1.58;
+}
+
+/* Kde knihu získat */
+.nakup {
+  max-width: 640px;
+  padding: 18px 24px 20px;
+  margin: 4px auto 20px;
+  border-radius: 20px;
+}
+
+.nakup h2 {
+  margin: 0 0 10px;
+  font-size: 23px;
+}
+
+.nakup p {
+  max-width: 540px;
+  margin: 6px auto;
+  line-height: 1.45;
+}
+
+.cena {
+  margin: 3px auto 12px;
+  padding: 8px 17px;
+  font-size: 16px;
+}
+
+.nakup > a.tlacitko,
+.nakup > details {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 760px) {
+  .nakup {
+    width: 100%;
+    padding: 18px 16px;
+  }
+
+  .nakup p {
+    text-align: center;
+  }
+}
   </style>
 </head>
 
