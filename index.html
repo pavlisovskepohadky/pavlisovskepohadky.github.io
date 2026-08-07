@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pavlišovské pohádky</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f2e8;
+      color: #3c322a;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 35px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 72px);
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    .podtitulek {
+      margin-top: 10px;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 20px 60px;
+    }
+
+    .hlavni-foto {
+      width: 100%;
+      max-height: 680px;
+      object-fit: contain;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto 55px;
+    }
+
+    section {
+      margin: 60px auto;
+    }
+
+    .text {
+      max-width: 720px;
+      margin: auto;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+
+    .fotky {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .fotky img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .nakup {
+      max-width: 760px;
+      margin: auto;
+      text-align: center;
+      background: #fffdf8;
+      padding: 40px 30px;
+      border-radius: 16px;
+    }
+
+    .tlacitko {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 13px 22px;
+      border-radius: 30px;
+      background: #5c5143;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    .tlacitko:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 14px;
+      color: #756b61;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding-top: 40px;
+      }
+
+      .fotky {
+        grid-template-columns: 1fr;
+      }
+
+      .text {
+        font-size: 17px;
+      }
+
+      .nakup {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pavlišovské pohádky</h1>
+    <div class="podtitulek">Pohádky, které mají svůj domov</div>
+  </header>
+
+  <main>
+
+    <img
+      class="hlavni-foto"
+      src="kniha.jpg"
+      alt="Kniha Pavlišovské pohádky">
+
+    <section class="text">
+      <h2>O Pavlišovských pohádkách</h2>
+
+      <p>
+        Pavlišovské pohádky přinášejí příběhy zasazené do známých míst,
+        mezi děti, zvířata a pohádkové postavy.
+      </p>
+
+      <p>
+        Knížka je určena dětem od 3 let, ale také rodičům a prarodičům,
+        kteří si chtějí užít společné chvíle při čtení a vydat se spolu
+        do světa pohádek.
+      </p>
+    </section>
+
+    <section>
+      <h2>Nahlédněte do knížky</h2>
+
+      <div class="fotky">
+        <img src="otevrena-kniha.jpg"
+             alt="Ukázka z knihy Pavlišovské pohádky">
+
+        <img src="zadni-strana.jpg"
+             alt="Zadní strana knihy Pavlišovské pohádky">
+      </div>
+    </section>
+
+    <section class="nakup">
+      <h2>Kde knihu získat</h2>
+
+      <p>
+        Knihu můžete zakoupit osobně v Knihkupectví Horová v Náchodě.
+      </p>
+
+      <p>
+        Po předchozí domluvě je možný také osobní odběr v Pavlišově
+        nebo zaslání prostřednictvím Zásilkovny či pošty.
+      </p>
+
+      <p>
+        Pro objednávku a další podrobnosti napište autorce.
+      </p>
+
+      <a class="tlacitko"
+         href="https://www.knihkupectvihorova.cz/"
+         target="_blank">
+         Knihkupectví Horová
+      </a>
+
+      <a class="tlacitko"
+         href="mailto:VAS_EMAIL?subject=Pavlišovské%20pohádky%20–%20objednávka%20knihy">
+         Napsat autorce
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Pavlišovské pohádky
+  </footer>
+
+</body>
+</html>
