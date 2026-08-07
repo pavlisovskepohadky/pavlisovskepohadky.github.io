@@ -132,6 +132,204 @@
         padding: 30px 20px;
       }
     }
+ /* Teplejší a kompaktnější vzhled */
+
+body {
+  background: linear-gradient(180deg, #f8f1e8 0%, #f2e6d8 100%);
+  color: #473b32;
+  line-height: 1.6;
+}
+
+header {
+  padding: 28px 20px 22px;
+}
+
+h1 {
+  font-size: clamp(34px, 5vw, 52px);
+  letter-spacing: 1px;
+}
+
+.podtitulek {
+  margin-top: 5px;
+  font-size: 17px;
+  color: #786454;
+}
+
+main {
+  max-width: 1050px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px 38px;
+  padding: 10px 24px 35px;
+}
+
+.hlavni-foto {
+  width: 100%;
+  max-height: 440px;
+  margin: 0;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(75, 55, 40, 0.16);
+}
+
+section {
+  margin: 0;
+}
+
+.text {
+  max-width: none;
+  margin: 0;
+  padding: 28px;
+  align-self: center;
+  text-align: left;
+  font-size: 18px;
+  background: rgba(255, 253, 248, 0.78);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(75, 55, 40, 0.08);
+}
+
+.text h2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #5b4939;
+}
+
+main > section:not(.text) {
+  grid-column: 1 / -1;
+}
+
+.fotky {
+  max-width: 800px;
+  margin: 18px auto 0;
+  gap: 18px;
+}
+
+.fotky img {
+  border-radius: 16px;
+  box-shadow: 0 7px 20px rgba(75, 55, 40, 0.12);
+}
+
+.nakup {
+  width: 100%;
+  max-width: 850px;
+  margin: 5px auto 0;
+  padding: 28px 32px;
+  background: #fffaf3;
+  border: 1px solid #e4d5c3;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px rgba(75, 55, 40, 0.08);
+}
+
+.nakup p {
+  margin: 10px 0;
+}
+
+.tlacitko,
+form button {
+  background: #8a6a4b;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 22px;
+}
+
+summary.tlacitko {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary.tlacitko::-webkit-details-marker {
+  display: none;
+}
+
+details[open] {
+  max-width: 520px;
+  margin: 12px auto 0;
+  padding: 16px 22px 22px;
+  background: #f8efe4;
+  border-radius: 18px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+form label {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5b4939;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  font: inherit;
+  color: #473b32;
+  background: #fffdf9;
+  border: 1px solid #cdb9a3;
+  border-radius: 10px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  justify-self: start;
+  margin-top: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
+}
+
+@media (max-width: 760px) {
+  header {
+    padding: 25px 15px 18px;
+  }
+
+  main {
+    display: block;
+    padding: 5px 16px 30px;
+  }
+
+  .hlavni-foto {
+    max-height: 420px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    text-align: center;
+    padding: 22px 18px;
+  }
+
+  .text h2 {
+    text-align: center;
+  }
+
+  main > section {
+    margin-top: 28px;
+  }
+
+  .fotky {
+    grid-template-columns: 1fr;
+  }
+
+  .nakup {
+    padding: 24px 18px;
+  }
+}
   </style>
 </head>
 
@@ -139,7 +337,7 @@
 
   <header>
     <h1>Pavlišovské pohádky</h1>
-    <div class="podtitulek">Pohádky, které mají svůj domov</div>
+    <div class="podtitulek">Když se svět kolem nás dotkne kouzel</div>
   </header>
 
   <main>
@@ -153,14 +351,15 @@
       <h2>O Pavlišovských pohádkách</h2>
 
       <p>
-        Pavlišovské pohádky přinášejí příběhy zasazené do známých míst,
-        mezi děti, zvířata a pohádkové postavy.
+        Pavlišovské pohádky vznikly pro děti předškolního a mladšího školního věku a pro společné chvíle pří čtení.
+        Příběhy jsou laskavé, bez zla a násilí a otevírají svět přátelství, vztahu k přírodě a zvířatům, českých tradic
+        i života na vesnici.
       </p>
 
       <p>
-        Knížka je určena dětem od 3 let, ale také rodičům a prarodičům,
-        kteří si chtějí užít společné chvíle při čtení a vydat se spolu
-        do světa pohádek.
+        Odehrávají se v Pavlišově u Náchoda a v blízkém okolí. Při jejich vzniku autorka čerpala nejen z vlastních
+        zážitků a fantazie, ale také z pavlišovských kronik a vyprávění místní kronikářky. Skutečná místa se tak v knize 
+        propojují s kouzelným světem příběhů.
       </p>
     </section>
 
@@ -180,7 +379,7 @@
       <h2>Kde knihu získat</h2>
     <p><strong>Cena knihy: 310 Kč</strong></p>
       <p>
-        Knihu můžete zakoupit osobně v Knihkupectví Horová v Náchodě.
+        Knihu můžete zakoupit v Knihkupectví Horová v Náchodě.
       </p>
 
       <p>
