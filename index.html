@@ -198,12 +198,21 @@
          Knihkupectví Horová
       </a>
 
-      <a class="tlacitko"
-         href="mailto:mia.jiraskova@email.cz?subject=Pavlišovské%20pohádky%20-%20objednávka%20knihy">
-         Napsat autorce
-      </a>
+     <details>
+<summary class="tlacitko">Napsat autorce</summary>
+      <form action="https://formspree.io/f/mrpzbnde" method="POST">
+<label>Vaše jméno:</label>
+<input type="text" name="jmeno" required>
+        <label>Váš e-mail:</label>
+        <input type="email" name="email" required>
+  <label>Vaše zpráva:</label>
+<textarea name="zprava" rows="6" required></textarea>
 
-    </section>
+<button type="submit">Odeslat zprávu</button>
+</form>
+</details>
+</section>
+    
 
   </main>
 
