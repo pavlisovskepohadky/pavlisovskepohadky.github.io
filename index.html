@@ -403,7 +403,48 @@ h2 {
 footer {
   padding: 14px;
 } 
-  </style>
+ /* Finální teplejší doladění */
+
+body {
+  background: linear-gradient(180deg, #f3e3d2 0%, #ead2ba 55%, #dfc0a3 100%);
+  color: #49382f;
+}
+
+.text {
+  background: rgba(255, 248, 239, 0.92);
+  border: 1px solid #ddc2a8;
+}
+
+.text p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.nakup {
+  background: #fff3e5;
+  border: 1px solid #d5b393;
+}
+
+.nakup p {
+  max-width: 520px;
+  margin: 9px auto;
+  line-height: 1.55;
+  text-wrap: balance;
+}
+
+h1, h2 {
+  color: #65483b;
+}
+
+.podtitulek {
+  color: #795d4e;
+}
+
+@media (max-width: 760px) {
+  .text p {
+    text-align: left;
+  }
+} </style>
 </head>
 
 <body>
@@ -424,7 +465,7 @@ footer {
       <h2>O Pavlišovských pohádkách</h2>
 
       <p>
-        Pavlišovské pohádky vznikly pro děti předškolního a mladšího školního věku a pro společné chvíle pří čtení.
+        Pavlišovské pohádky vznikly pro děti předškolního a mladšího školního věku a pro společné chvíle při čtení.
         Příběhy jsou laskavé, bez zla a násilí a otevírají svět přátelství, vztahu k přírodě a zvířatům, českých tradic
         i života na vesnici.
       </p>
@@ -456,12 +497,16 @@ footer {
       </p>
 
       <p>
-        Po předchozí domluvě je možný také osobní odběr v Pavlišově
-        nebo zaslání prostřednictvím Zásilkovny či pošty.
+        Po předchozí domluvě je 
+        možný osobní odběr v 
+        Pavlišově. Knihu lze také
+        zaslat poštou nebo Zásilkovnou.
       </p>
 
       <p>
-        Chcete si knihu objednat nebo se na něco zeptat? Napište autorce.
+        Chcete si knihu objednat
+        nebo se na něco zeptat?
+        Napište autorce.
       </p>
 
       <a class="tlacitko"
